@@ -52,3 +52,8 @@ export default Vue.extend({
   }),
 });
 </script>
+<style>
+html {
+  overflow-y: auto !important;
+}
+</style>
