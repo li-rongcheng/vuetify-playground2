@@ -22,14 +22,7 @@
 <script lang="ts">
 import Vue from "vue";
 export default Vue.extend({
-  data: () => ({
-    items: [
-      { title: "item 1" },
-      { title: "item 2" },
-      { title: "item 3" },
-      { title: "item 4" },
-    ],
-  }),
+  props: { items: Array },
   methods: {
     listClicked: (item: { title: string }) => {
       console.log("listClicked() called, title:", item.title);
