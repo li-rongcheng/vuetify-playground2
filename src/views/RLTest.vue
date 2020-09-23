@@ -1,36 +1,34 @@
 <template>
-  <div>
-    <v-container>
-      <v-row justify="center"><h1>RL test page</h1></v-row>
-      <v-row>
-        <v-col cols="12"><a href="https://materialdesignicons.com">Material Design Icons</a></v-col>
-        <v-col cols="6"><icon-card-1 /></v-col>
-        <v-col cols="6"><icon-card-2 /></v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="6">
-          <v-card outlined>
-            <v-card-text>
-              <v-row>
-                <hover-menu class="pa-1" :items="items1" @listClicked="menuClicked" />
-                <hover-menu class="pa-1" :items="items2" @listClicked="menuClicked" />
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="6">
-          <v-card outlined>
-            <v-card-text>
-              <v-row>
-                <hover-menu class="pa-1" :items="items3" />
-                <hover-menu class="pa-1" :items="items4" />
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-  </div>
+  <v-container>
+    <v-row justify="center"><h1>RL test page!</h1></v-row>
+    <v-row>
+      <v-col cols="12"><a href="https://materialdesignicons.com">Material Design Icons</a></v-col>
+      <v-col cols="6"><icon-card-1 /></v-col>
+      <v-col cols="6"><icon-card-2 /></v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="6">
+        <v-card outlined>
+          <v-card-text>
+            <v-row>
+              <hover-menu class="pa-1" :items="items1" @listClicked="menuClicked" />
+              <hover-menu class="pa-1" :items="items2" @listClicked="menuClicked" />
+            </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col cols="6">
+        <v-card outlined>
+          <v-card-text>
+            <v-row>
+              <hover-menu class="pa-1" :items="items3" />
+              <hover-menu class="pa-1" :items="items4" />
+            </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <script lang="ts">
 import Vue from "vue";
