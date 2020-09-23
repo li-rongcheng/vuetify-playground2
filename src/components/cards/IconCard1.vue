@@ -1,0 +1,19 @@
+<template>
+  <v-card class="mx-auto" dark>
+    <v-card-text>
+      <v-icon>mdi-open-in-new</v-icon>
+      <v-icon>mdi-ab-testing</v-icon>
+      <v-icon>mdi-account-box</v-icon>
+      <v-icon>mdi-snowflake-off</v-icon>
+      <v-icon>mdi-access-point</v-icon>
+      <v-icon>mdi-account</v-icon>
+      <v-icon>mdi-account-alert</v-icon>
+      <v-icon>mdi-account-box</v-icon>
+      <v-icon>mdi-qrcode</v-icon>
+      <v-icon>mdi-qrcode-scan</v-icon>
+      <v-icon>mdi-location-enter</v-icon>
+      <v-icon>mdi-location-exit</v-icon>
+      <v-icon>mdi-office-building-marker-outline</v-icon>
+    </v-card-text>
+  </v-card>
+</template>

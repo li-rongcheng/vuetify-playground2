@@ -1,0 +1,21 @@
+<template>
+  <v-card class="mx-auto">
+    <v-card-text>
+      <v-icon>mdi-battery-alert-variant-outline</v-icon>
+      <v-icon>mdi-battery-10</v-icon>
+      <v-icon>mdi-battery-20</v-icon>
+      <v-icon>mdi-battery-30</v-icon>
+      <v-icon>mdi-battery-40</v-icon>
+      <v-icon>mdi-battery-50</v-icon>
+      <v-icon>mdi-battery-60</v-icon>
+      <v-icon>mdi-battery-70</v-icon>
+      <v-icon>mdi-battery-80</v-icon>
+      <v-icon>mdi-battery-90</v-icon>
+      <v-icon>mdi-battery</v-icon>
+      <v-icon>mdi-battery-charging-outline</v-icon>
+      <v-icon>mdi-battery-charging-low</v-icon>
+      <v-icon>mdi-battery-charging-medium</v-icon>
+      <v-icon>mdi-battery-charging-high</v-icon>
+    </v-card-text>
+  </v-card>
+</template>
