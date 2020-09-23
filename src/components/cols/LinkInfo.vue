@@ -5,13 +5,7 @@
     </h2>
 
     <v-row justify="center">
-      <a
-        v-for="(next, i) in links"
-        :key="i"
-        :href="next.href"
-        class="subheading mx-3"
-        target="_blank"
-      >
+      <a v-for="(next, i) in links" :key="i" :href="next.href" class="subheading mx-3" target="_blank">
         {{ next.text }}
       </a>
     </v-row>
