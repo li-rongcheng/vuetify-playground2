@@ -12,6 +12,10 @@
       <v-btn text router to="rltest">
         <span class="mr-2">RLTest</span>
       </v-btn>
+
+      <v-btn text router to="babylon">
+        <span class="mr-2">Babylon</span>
+      </v-btn>
     </v-app-bar>
 
     <v-main>
