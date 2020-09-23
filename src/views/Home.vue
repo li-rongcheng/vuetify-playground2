@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" @listClicked="menuClicked" />
   </div>
 </template>
 
@@ -13,5 +13,9 @@ import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
     HelloWorld,
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  menuClicked(title: string) {
+    console.log("received in Home.vue, title: ", title);
+  }
+}
 </script>
