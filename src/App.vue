@@ -5,15 +5,15 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn text router to="about">
+      <v-btn text router to="/about">
         <span class="mr-2">About</span>
       </v-btn>
 
-      <v-btn text router to="rltest">
+      <v-btn text router to="/rltest">
         <span class="mr-2">RLTest</span>
       </v-btn>
 
-      <v-btn text router to="babylon">
+      <v-btn text router to="/babylon">
         <span class="mr-2">Babylon</span>
       </v-btn>
     </v-app-bar>

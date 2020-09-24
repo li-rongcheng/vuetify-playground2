@@ -1,38 +1,23 @@
 <template>
   <v-container>
-    <h1>babylon test</h1>
-    <canvas id="renderCanvas"></canvas>
+    <v-row justify="center"><h1>Babylon Demos</h1></v-row>
+    <v-row>
+      <v-btn text router to="/babylon/demo1">
+        <span class="mr-2">demo1</span>
+      </v-btn>
+      <v-btn text router to="/babylon/demo2">
+        <span class="mr-2">demo2</span>
+      </v-btn>
+    </v-row>
+    <v-row>
+      <router-view />
+    </v-row>
   </v-container>
 </template>
 <script lang="ts">
 import Vue from "vue";
-// import * as BABYLON from "babylonjs";
-//import { Engine, Scene } from "babylonjs";
-import { Engine, Scene, ArcRotateCamera, HemisphericLight, Vector3, MeshBuilder, Mesh } from "babylonjs";
-// import { Engine, Scene, ArcRotateCamera, Vector3 } from "babylonjs";
-
 export default Vue.extend({
-  mounted() {
-    this.createScene();
-  },
-  methods: {
-    createScene(): Scene {
-      const canvas: HTMLCanvasElement = document.getElementById("renderCanvas") as HTMLCanvasElement;
-      const engine: Engine = new Engine(canvas, true);
-      const scene: Scene = new Scene(engine);
-
-      const camera: ArcRotateCamera = new ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, Vector3.Zero(), scene);
-      camera.attachControl(canvas, true);
-
-      const light1: HemisphericLight = new HemisphericLight("light1", new Vector3(1, 1, 0), scene);
-      const sphere: Mesh = MeshBuilder.CreateSphere("sphere", { diameter: 1 }, scene);
-
-      engine.runRenderLoop(() => {
-        scene.render();
-      });
-      return scene;
-    },
-  },
+  methods: {},
 });
 </script>
 <style scoped>
