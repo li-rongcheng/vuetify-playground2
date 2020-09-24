@@ -1,7 +1,6 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
-import RLTest from "../views/RLTest.vue";
 import Babylon from "../views/Babylon.vue";
 import BabylonDemo1 from "../views/babylon/BabylonDemo1.vue";
 import BabylonDemo2 from "../views/babylon/BabylonDemo2.vue";
@@ -11,14 +10,13 @@ Vue.use(VueRouter);
 const routes: Array<RouteConfig> = [
   { path: "/", name: "Home", component: Home },
   {
-    path: "/about",
-    name: "About",
+    path: "/rltest",
+    name: "RLTest",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    component: () => import(/* webpackChunkName: "about" */ "../views/RLTest.vue"),
   },
-  { path: "/rltest", name: "RLTest", component: RLTest },
   {
     path: "/babylon",
     name: "Babylon",

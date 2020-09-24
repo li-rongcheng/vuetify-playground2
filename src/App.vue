@@ -5,10 +5,6 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn text router to="/about">
-        <span class="mr-2">About</span>
-      </v-btn>
-
       <v-btn text router to="/rltest">
         <span class="mr-2">RLTest</span>
       </v-btn>
