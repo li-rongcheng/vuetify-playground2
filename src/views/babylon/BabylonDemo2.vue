@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row justify="center"><h1>babylon demo2</h1></v-row>
+    <v-row justify="center"><h2>babylon demo2</h2></v-row>
     <v-row>
       <canvas id="renderCanvas"></canvas>
     </v-row>

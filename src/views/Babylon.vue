@@ -2,12 +2,9 @@
   <v-container>
     <v-row justify="center"><h1>Babylon Demos</h1></v-row>
     <v-row>
-      <v-btn text router to="/babylon/demo1">
-        <span class="mr-2">demo1</span>
-      </v-btn>
-      <v-btn text router to="/babylon/demo2">
-        <span class="mr-2">demo2</span>
-      </v-btn>
+      <v-btn text router to="/babylon/demo1"><span class="mr-2">demo1</span></v-btn>
+      <v-btn text router to="/babylon/demo2"><span class="mr-2">demo2</span></v-btn>
+      <v-btn text router to="/babylon/animation101"><span class="mr-2">animation101</span></v-btn>
     </v-row>
     <v-row>
       <router-view />
