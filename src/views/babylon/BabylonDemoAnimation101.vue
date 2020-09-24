@@ -25,18 +25,20 @@ const createScene = function(canvas: HTMLCanvasElement, engine: BABYLON.Engine):
   //Boxes
   const box1 = BABYLON.Mesh.CreateBox("Box1", 10.0, scene);
   box1.position.x = -20;
-  const box2 = BABYLON.Mesh.CreateBox("Box2", 10.0, scene);
-
   const materialBox = new BABYLON.StandardMaterial("texture1", scene);
   materialBox.diffuseColor = new BABYLON.Color3(0, 1, 0); //Green
-  const materialBox2 = new BABYLON.StandardMaterial("texture2", scene);
-
-  //Applying materials
   box1.material = materialBox;
+
+  const box2 = BABYLON.Mesh.CreateBox("Box2", 10.0, scene);
+  box2.position.x = 20;
+  const materialBox2 = new BABYLON.StandardMaterial("texture2", scene);
   box2.material = materialBox2;
 
-  //Positioning box
-  box2.position.x = 20;
+  const obj = BABYLON.Mesh.CreateTorus("obj1", 15, 5, 6, scene);
+  obj.position.y = 30;
+  const materialObj1 = new BABYLON.StandardMaterial("texture3", scene);
+  materialObj1.diffuseColor = new BABYLON.Color3(1, 0, 0);
+  obj.material = materialObj1;
 
   // Creation of a basic animation with box 1
   //----------------------------------------
