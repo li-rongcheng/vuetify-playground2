@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "babylonjs": "^4.1.0",
+    "babylonjs-gui": "^4.1.0",
+    "babylonjs-loaders": "^4.1.0",
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
