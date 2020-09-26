@@ -2,7 +2,7 @@
   <v-container>
     <v-row justify="center"><h2>babylon GLTF model</h2></v-row>
     <v-row justify="center">
-      <v-col cols="6">Find example from : <a href="http://https://playground.babylonjs.com/#SYQW69">here</a></v-col>
+      <v-col cols="6">Find example from : <a href="https://playground.babylonjs.com/#SYQW69">here</a></v-col>
       <v-col cols="6">
         <v-select :items="modelFilenames" :label="modelFilenames[0]" @change="loadModelBySelection"></v-select>
       </v-col>
