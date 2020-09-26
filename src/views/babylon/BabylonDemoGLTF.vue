@@ -33,7 +33,7 @@ export default Vue.extend({
       { rootUrl: "https://models.babylonjs.com/", fileName: "alien.glb" },
       { rootUrl: "/models/", fileName: "anthidium_forcipatum_gltf.glb" },
     ],
-    instance: null as BabylonInstance,
+    instance: {} as BabylonInstance,
   }),
   mounted() {
     this.createScene();
@@ -93,13 +93,13 @@ export default Vue.extend({
           meshes[1].absolutePosition.z
         );
 
-        camera.setTarget(pos);
+        (camera as BABYLON.ArcRotateCamera).setTarget(pos);
 
         advancedTexture.dispose();
       });
     },
 
-    loadModelBySelection(name) {
+    loadModelBySelection(name: string) {
       if (!this.instance) {
         throw new Error("loadModelBySelection >> this.instance is undefined.");
       }
