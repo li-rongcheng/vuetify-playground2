@@ -5,6 +5,7 @@ import Babylon from "../views/Babylon.vue";
 import BabylonDemo1 from "../views/babylon/BabylonDemo1.vue";
 import BabylonDemo2 from "../views/babylon/BabylonDemo2.vue";
 import BabylonDemoAnimation101 from "../views/babylon/BabylonDemoAnimation101.vue";
+import BabylonDemoGLTF from "../views/babylon/BabylonDemoGLTF.vue";
 
 Vue.use(VueRouter);
 
@@ -26,6 +27,7 @@ const routes: Array<RouteConfig> = [
       { path: "demo1", name: "BabylonDemo1", component: BabylonDemo1 },
       { path: "demo2", name: "BabylonDemo2", component: BabylonDemo2 },
       { path: "animation101", name: "BabylonDemoAnimation101", component: BabylonDemoAnimation101 },
+      { path: "gltf", name: "BabylonDemoGLTF", component: BabylonDemoGLTF },
     ],
   },
 ];
